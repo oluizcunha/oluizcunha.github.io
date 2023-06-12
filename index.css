@@ -2204,6 +2204,7 @@ body {
   right: 15px;
   font-size: 1.2rem;
   color: #0e2431;
+  display: flex;
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
@@ -2228,4 +2229,8 @@ body {
 
 .fab-padding {
   padding-top: 0.7rem;
+}
+
+h2 {
+  text-align: start;
 }
