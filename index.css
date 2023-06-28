@@ -1256,7 +1256,7 @@ img {
   display: flex;
 }
 .content-and-image-side-by-side .item .text-content {
-  width: 50%;
+  /* width: 50%; */
   padding-left: 2vw;
   padding-right: 6vw;
 }
@@ -2206,6 +2206,9 @@ body {
   color: #0e2431;
   display: flex;
 }
+.map {
+  text-align: center;
+}
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
   transform: translateX(0);
@@ -2233,4 +2236,9 @@ body {
 
 h2 {
   text-align: start;
+}
+
+.img-prd {
+  max-width: 700px;
+  max-height: 700px;
 }
