@@ -17,18 +17,32 @@
 >
   <i class="fab fab-padding fa-whatsapp"></i>
 </a>
+
+<!-- <header>
+  <div class="header mobile-only">
+    <img src="./img/Logo_retangulo.png" class="image-logo-mobile" alt="" />
+    <div class="header-right">
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a class="active" href="#home">Home</a>
+    </div>
+  </div>
+</header> -->
+
+<!-- <header class="header-desktop desktop-only"> -->
+
 <header class="header-desktop">
-  <div class="header-container desktop-only">
+  <div class="header-container">
     <div class="bg-close"></div>
     <div class="bg-header"></div>
 
     <div class="logo">
       <a href="/">
-        <img src="./img/logo_quadrada.png" class="image-logo" alt="" />
+        <img src="./img/Logo_retangulo.png" class="image-logo" alt="" />
       </a>
     </div>
     <div class="menu-options">
-      <div class="menu-links">
+      <div class="menu-links desktop-only">
         <ul>
           <!-- <li>
             <a  href=""
@@ -37,15 +51,15 @@
           </li> -->
 
           <li>
-            <a href="#metodologia">Metodologia</a>
+            <a href="./index.html#metodologia">Metodologia</a>
           </li>
 
           <li>
-            <a href="#nossaestrutura">Estrutura</a>
+            <a href="./index.html#nossaestrutura">Estrutura</a>
           </li>
 
           <li>
-            <a href="#carisma">Carisma</a>
+            <a href="./index.html#carisma">Carisma</a>
           </li>
           <li><a href="./map.html">Como chegar</a></li>
           <li><a href="./novidades.html">Novidades</a></li>
@@ -56,7 +70,7 @@
       </div>
       <div class="button-and-language">
         <a
-          href="https://api.whatsapp.com/send?phone=5565984526656&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20visita."
+          href="https://api.whatsapp.com/send?phone=556581325317&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20visita%20"
           target="_blank"
           class="btn btn-primary"
           ><span>Agende uma visita <i class="fab fa-whatsapp"></i></span>
@@ -136,56 +150,67 @@
 </header>
 
 <body>
-  <div class="carousel-one-column">
-    <div class="tns-outer" id="tns1-ow">
-      <div class="tns-nav" aria-label="Carousel Pagination">
-        <button
-          type="button"
-          data-nav="0"
-          aria-controls="tns1"
-          aria-label="Carousel Page 1 (Current Slide)"
-          class="tns-nav-active"
-        ></button>
-      </div>
-      <div
-        class="tns-liveregion tns-visually-hidden"
-        aria-live="polite"
-        aria-atomic="true"
-      >
-        slide <span class="current">1</span> of 1
-      </div>
-      <div id="tns1-mw" class="tns-ovh">
-        <div class="tns-inner" id="tns1-iw">
-          <div
-            class="carousel tns-slider tns-carousel tns-subpixel tns-calc tns-horizontal"
-            id="tns1"
-            style="
-              transition-duration: 0s;
-              transform: translate3d(0%, 0px, 0px);
-            "
-          >
-            <div class="tns-item tns-slide-active" id="tns1-item0">
-              <div class="item">
-                <img
-                  src="img/sala.jpg"
-                  class="hover"
-                  width="1800"
-                  height="1200"
-                  alt=""
-                />
-
-                <div class="mask"></div>
-                <div class="texts">
-                  <h2>Aprendendo com Amor e Fé.</h2>
-                </div>
-              </div>
-            </div>
+  <div class="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="image-container">
+          <div class="text">
+            <h1>
+              <span>Aprendendo</span>
+              <span>com</span>
+              <span>Amor</span>
+              <span>e</span>
+              <span>Fé.</span>
+            </h1>
           </div>
+          <img
+            id="carousel-image"
+            alt="Imagem do carrossel"
+            class="darken-image"
+          />
         </div>
       </div>
     </div>
+
+    <a class="carousel-prev" href="#" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="carousel-next" href="#" onclick="changeSlide(1)">&#10095;</a>
   </div>
-  <br />
+  <script>
+    let slideIndex = 0;
+    const slides = [
+      "./img/inicial (1).jpg",
+      "./img/inicial (2).jpg",
+      "./img/inicial (3).jpg",
+      "./img/inicial (4).jpg",
+    ];
+
+    function changeSlide(n) {
+      slideIndex += n;
+
+      if (slideIndex >= slides.length) {
+        slideIndex = 0;
+      } else if (slideIndex < 0) {
+        slideIndex = slides.length - 1;
+      }
+
+      showSlide();
+    }
+
+    function showSlide() {
+      const image = document.getElementById("carousel-image");
+      image.src = slides[slideIndex];
+    }
+
+    function startCarousel() {
+      showSlide();
+
+      setInterval(() => {
+        changeSlide(1);
+      }, 10000);
+    }
+
+    startCarousel();
+  </script>
 
   <div class="content-and-image-side-by-side color-loop pl-mb-2 pr-mb-2">
     <div class="item">
@@ -206,8 +231,8 @@
     </div>
 
     <div class="item">
-      <div class="text-content" id="metodologia">
-        <h3 class="title">Metodologia</h3>
+      <div class="text-content">
+        <h3 class="title" id="metodologia">Metodologia</h3>
         <p class="description">
           Em sua ação pedagógica a Escola Villa Mater pratica as principais
           vertentes que unem o pós construtivismo a BNCC:
@@ -255,11 +280,27 @@
       <div class="text-content">
         <h3 class="title">Musicalização</h3>
         <p class="description">
-          Na escola Villa Mater seu filho tem aulas de musicalização dentre
-          tantas tantas outras, que proporciona o desenvolvimento integral das
-          crianças. A musicalização desenvolve a criatividade e a memória,
-          melhora a coordenação motora, aumenta a capacidade de concentração,
-          estimula funções cerebrais e produz bem-estar e alegria.
+          O aprendizado musical no contexto escolar é fundamental para o
+          desenvolvimento humano. A música permite ao indivíduo uma evolução em
+          áreas importantes do desenvolvimento humano tal como emoção,
+          disciplina, concentração, ordem etc. É reconhecido que a música
+          carrega em sua natureza muito mais que os elementos práticos da
+          própria produção musical. O fazer musical é um tipo de ação social com
+          consequências para outros tipos de ações sociais. ‘Música’ é não
+          apenas reflexiva; ela é também generativa tanto como cultura, como
+          capacidade humana. Numa reflexão mais profunda a música através de
+          seus sons toca as potências da alma humana (Razão, Vontade e
+          Sensibilidade) e suscita em nós a harmonia. No que compete às aulas de
+          musicalização de bebês e crianças, as descobertas biológicas e
+          psicológicas principalmente os estudos de Piaget e Wallon apontam para
+          a estrutura cognitiva do indivíduo começar a serem desenvolvidas desde
+          muito cedo, por isso é importante que as crianças ainda que não tenham
+          estrutura física para tocar um instrumento ou mesmo cantar de forma
+          afinada tenham contato com o universo sonoro musical que nessa
+          determinada fase deve ocorrer por meio de jogos e brincadeiras
+          musicais, de modo que os elementos musicais se enraízem nelas e quando
+          chegarem na idade da razão se tornem de fato bons músicos e por
+          consequência bons cidadãos.
         </p>
       </div>
 
@@ -464,25 +505,7 @@
           <li><a href="#carisma">Carisma</a></li>
         </ul>
       </div>
-      <!-- <div class="footer-col">
-        <h4>get help</h4>
-        <ul>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">shipping</a></li>
-          <li><a href="#">returns</a></li>
-          <li><a href="#">order status</a></li>
-          <li><a href="#">payment options</a></li>
-        </ul>
-      </div> -->
-      <!-- <div class="footer-col">
-        <h4>online shop</h4>
-        <ul>
-          <li><a href="#">watch</a></li>
-          <li><a href="#">bag</a></li>
-          <li><a href="#">shoes</a></li>
-          <li><a href="#">dress</a></li>
-        </ul>
-      </div> -->
+
       <div class="footer-col">
         <h4>Acompanhe nas redes sociais</h4>
         <div class="social-links">
