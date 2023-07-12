@@ -1569,6 +1569,9 @@ h2 {
   .mobile-only {
     display: none;
   }
+  .img-prd-mb {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1590,8 +1593,18 @@ h2 {
   }
 
   .img-prd {
-    max-width: 100%;
-    max-height: 100%;
+    /* max-width: 50px;
+    max-height: 50px; */
+    display: none;
+  }
+
+  .img-prd-mb {
+    display: block;
+    max-width: 450px;
+  }
+
+  .callout .callout-container .text-content {
+    width: 100%;
   }
   .content-and-image-side-by-side .item {
     display: flex;
