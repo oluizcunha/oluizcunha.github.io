@@ -1,596 +1,394 @@
-<link rel="icon" type="image/png" href="img/logo_quadrada.ico" />
-<meta charset="utf-8" />
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Montserrat"
-/>
-<link rel="stylesheet" href="index.css" />
-<link
-  rel="stylesheet"
-  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-/>
-<a
-  href="https://api.whatsapp.com/send?phone=556581325317&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20visita%20"
-  style=""
-  class="wpp"
-  target="_blank"
->
-  <i class="fab fab-padding fa-whatsapp"></i>
-</a>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != "dataLayer" ? "&l=" + l : "";
-      j.async = true;
-      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, "script", "dataLayer", "GTM-WHXRD3JC");
-  </script>
-  <!-- End Google Tag Manager -->
+    <title>Luiz Otavio Cunha Moraes</title>
+    <meta content="" name="descriptison" />
+    <meta content="" name="keywords" />
 
-  <meta
-    name="facebook-domain-verification"
-    content="zuft6qva2bh01rhz7o5rbeuvy3kj2k"
-  />
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <title>Villa Mater</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-  />
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
 
-  <!-- Meta Pixel Code -->
-  <script>
-    !(function (f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function () {
-        n.callMethod
-          ? n.callMethod.apply(n, arguments)
-          : n.queue.push(arguments);
-      };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = "2.0";
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s);
-    })(
-      window,
-      document,
-      "script",
-      "https://connect.facebook.net/en_US/fbevents.js"
-    );
-    fbq("init", "1029399148057166");
-    fbq("track", "PageView");
-  </script>
-  <noscript
-    ><img
-      height="1"
-      width="1"
-      style="display: none"
-      src="https://www.facebook.com/tr?id=1029399148057166&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Meta Pixel Code -->
-</head>
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-<header class="header-desktop">
-  <div class="header-container">
-    <div class="bg-close"></div>
-    <div class="bg-header"></div>
+    <!-- =======================================================
+  * Template Name: MyResume - v2.1.0
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
 
-    <div class="logo">
-      <a href="/">
-        <img src="./img/Logo_retangulo.png" class="image-logo" alt="" />
-      </a>
-    </div>
-    <div class="menu-options">
-      <div class="menu-links desktop-only">
+  <body onload="count()">
+    <!-- ======= Mobile nav toggle button ======= -->
+    <button type="button" class="mobile-nav-toggle d-xl-none">
+      <i class="icofont-navigation-menu"></i>
+    </button>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex flex-column justify-content-center">
+      <nav class="nav-menu">
         <ul>
-          <!-- <li>
-            <a  href=""
-              >Diferenciais Villa Mater</a
+          <li class="active">
+            <a href="#hero"><i class="bx bx-home"></i> <span>Início</span></a>
+          </li>
+          <li>
+            <a href="#about"><i class="bx bx-user"></i> <span>Sobre</span></a>
+          </li>
+          <li>
+            <a href="#resume"
+              ><i class="bx bx-file-blank"></i> <span>Resumo</span></a
             >
-          </li> -->
-
-          <li>
-            <a href="./index.html#metodologia">Metodologia</a>
           </li>
-
-          <li>
-            <a href="./index.html#nossaestrutura">Estrutura</a>
-          </li>
-
-          <li>
-            <a href="./index.html#carisma">Carisma</a>
-          </li>
-          <li><a href="./map.html">Como chegar</a></li>
-          <li><a href="./novidades.html">Novidades</a></li>
-          <!-- <li>
-            <a  href="/pt/blog/">Blog</a>
-          </li> -->
         </ul>
-      </div>
-      <div class="button-and-language">
-        <a
-          href="https://api.whatsapp.com/send?phone=556581325317&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20visita%20"
-          target="_blank"
-          class="btn btn-primary"
-          ><span>Agende uma visita <i class="fab fa-whatsapp"></i></span>
-        </a>
+      </nav>
+      <!-- .nav-menu -->
+    </header>
+    <!-- End Header -->
 
-        <div class="language-options">
-          <div class="flag"></div>
-          <div class="chevron"></div>
-          <div class="other-languages">
-            <a href="/pt/ollect" class="current">
-              <div class="flag">
-                <svg
-                  width="19"
-                  height="15"
-                  viewBox="0 0 19 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M19 0H0V14.3253H19V0Z" fill="#4CC159"></path>
-                  <path
-                    d="M9.50017 13.4159L0.738281 7.16455L9.50017 0.908203L18.2621 7.16455L9.50017 13.4159Z"
-                    fill="#FFDC4A"
-                  ></path>
-                  <path
-                    d="M9.5008 10.8805C11.5529 10.8805 13.2164 9.21696 13.2164 7.16486C13.2164 5.11277 11.5529 3.44922 9.5008 3.44922C7.44871 3.44922 5.78516 5.11277 5.78516 7.16486C5.78516 9.21696 7.44871 10.8805 9.5008 10.8805Z"
-                    fill="#2D59E2"
-                  ></path>
-                  <path
-                    d="M13.2137 7.15006C11.9019 5.86484 10.1394 5.14396 8.30298 5.1416C7.58343 5.14231 6.86844 5.25583 6.18406 5.47802C5.91731 5.99684 5.7779 6.5717 5.77734 7.15508C5.77734 7.18019 5.77734 7.20027 5.77734 7.2304C6.9502 6.62558 8.30085 6.46068 9.58477 6.76555C10.8687 7.07041 12.001 7.82489 12.7768 8.89239C13.061 8.35743 13.2093 7.76082 13.2086 7.15508L13.2137 7.15006Z"
-                    fill="white"
-                  ></path>
-                </svg>
-              </div>
-            </a>
-
-            <a href="/en/ollect">
-              <div class="flag">
-                <svg
-                  width="17"
-                  height="13"
-                  viewBox="0 0 17 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M0 0V12.9737H3.57895V0H0Z"
-                    fill="#EC1C24"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.5791 0V12.9737H14.3159V0H3.5791Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M16.9998 0H13.4209V12.9737H16.9998V0Z"
-                    fill="#EC1C24"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M8.49995 10.5435H8.6432L8.59707 8.64938L8.72939 8.53694C9.32545 8.60737 9.85959 8.67162 10.4556 8.74329L10.3051 8.22558C10.2808 8.13414 10.3148 8.0353 10.3828 7.97969L12.1151 6.51429L11.7558 6.33883C11.598 6.27952 11.6429 6.18809 11.6987 5.96568L11.9622 4.96362L10.957 5.18356C10.8587 5.19962 10.7931 5.13413 10.7786 5.07235L10.6487 4.60159L9.85352 5.52952C9.74062 5.67779 9.51118 5.67779 9.58281 5.3343L9.92272 3.45497L9.46748 3.70085C9.3388 3.77498 9.21133 3.78734 9.13971 3.6539L8.49995 2.43066L7.86019 3.6539C7.78857 3.78611 7.6611 3.77498 7.53363 3.70085L7.0784 3.45497L7.41831 5.3343C7.48872 5.67779 7.26049 5.67779 7.14638 5.52952L6.35123 4.60159L6.22134 5.07235C6.20556 5.13413 6.14243 5.19962 6.04289 5.18356L5.03651 4.96362L5.29994 5.96445C5.357 6.18685 5.4007 6.27829 5.2441 6.3376L4.88477 6.51305L6.61709 7.97846C6.68629 8.03406 6.72028 8.13291 6.696 8.22434L6.54547 8.74329C7.14152 8.67039 7.67567 8.60737 8.27172 8.53694L8.40283 8.64938L8.3567 10.5448H8.49995V10.5435Z"
-                    fill="#EC1C24"
-                  ></path>
-                </svg>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript
-    ><iframe
-      src="https://www.googletagmanager.com/ns.html?id=GTM-WHXRD3JC"
-      height="0"
-      width="0"
-      style="display: none; visibility: hidden"
-    ></iframe
-  ></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <div class="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="image-container">
-          <div class="text">
-            <h1>
-              <span>Aprendendo</span>
-              <span>com</span>
-              <span>Amor</span>
-              <span>e</span>
-              <span>Fé.</span>
-            </h1>
-          </div>
-          <img
-            id="carousel-image"
-            alt="Imagem do carrossel"
-            class="darken-image"
-          />
-        </div>
-      </div>
-    </div>
-
-    <a class="carousel-prev" href="#" onclick="changeSlide(-1)">&#10094;</a>
-    <a class="carousel-next" href="#" onclick="changeSlide(1)">&#10095;</a>
-  </div>
-  <script>
-    let slideIndex = 0;
-    const slides = [
-      "./img/inicial (1).jpg",
-      "./img/inicial (2).jpg",
-      "./img/inicial (3).jpg",
-      "./img/inicial (4).jpg",
-    ];
-
-    function changeSlide(n) {
-      slideIndex += n;
-
-      if (slideIndex >= slides.length) {
-        slideIndex = 0;
-      } else if (slideIndex < 0) {
-        slideIndex = slides.length - 1;
-      }
-
-      showSlide();
-    }
-
-    function showSlide() {
-      const image = document.getElementById("carousel-image");
-      image.src = slides[slideIndex];
-    }
-
-    function startCarousel() {
-      showSlide();
-
-      setInterval(() => {
-        changeSlide(1);
-      }, 10000);
-    }
-
-    startCarousel();
-  </script>
-
-  <div class="content-and-image-side-by-side color-loop pl-mb-2 pr-mb-2">
-    <div class="item">
-      <div class="text-content">
-        <h3 class="title bemvindo-">Seja bem vindo!</h3>
-        <p class="description">
-          A Villa Mater está de braços e corações abertos para acolher sua
-          família! Nossa filosofia pedagógica busca proporcionar uma educação
-          humanitária, inclusiva, afetiva, pautada na valorização da vida e na
-          intimidade com Deus. Por meio de estímulos, proporcionamos situações
-          para que nossos alunos desenvolvam a compreensão de hierarquia e da
-          disciplina para agirem de forma autônoma.
-        </p>
-      </div>
-      <div>
-        <img src="img/bem_vindo.jpg" class="img-prd" />
-      </div>
-    </div>
-    <div></div>
-    <img src="img/bem_vindo.jpg" class="img-prd-mb" />
-
-    <div class="item">
-      <div class="text-content">
-        <h3 class="title" id="metodologia">Metodologia</h3>
-        <p class="description">
-          Em sua ação pedagógica a Escola Villa Mater pratica as principais
-          vertentes que unem o pós construtivismo a BNCC:
-        </p>
-
-        <p class="description">
-          Reforça que o cuidar está integrado às ações de conhecer e explorar o
-          mundo, estabelece que a formação de vínculos proporciona segurança
-          afetiva para a criança construir conhecimentos com o mundo e
-          desenvolver autonomia, permite que a criança enfrente e supere
-          obstáculos. As crianças ficam no centro do processo, mesmo em
-          atividades dirigidas, todas devem ter tempo e espaço para serem
-          ativas, o professor deve planejar cuidadosamente momentos de livre
-          exploração, propõe a instituição de uma rotina para transmitir a
-          sensação de segurança e ajuda no desenvolvimento da autonomia.
-        </p>
-      </div>
-      <div>
-        <img src="img/Metodologia.jpg" class="img-prd" />
-      </div>
-    </div>
-    <div></div>
-    <img src="img/Metodologia.jpg" class="img-prd-mb" />
-
-    <div class="item">
-      <div class="text-content">
-        <h3 class="title pd-top">Educação Emocional</h3>
-        <p class="description">
-          Contato da criança com suas emoções permitindo que elas compartilhem
-          percepções e sentimentos.
-        </p>
-        <h3 class="title pd-top identit">Pensamento Lógico-Matemático</h3>
-        <p class="description">
-          A reflexão por meio do diálogo, da observação e da escuta.
-        </p>
-        <h3 class="title pd-top">Educação Ambiental</h3>
-        <p class="description">
-          A formação de pessoas responsáveis pela sustentabilidade.
-        </p>
-      </div>
-      <div>
-        <img src="img/EducaocaoEmocional.jpg" class="img-prd" />
-      </div>
-    </div>
-    <div></div>
-    <img src="img/EducaocaoEmocional.jpg" class="img-prd-mb" />
-
-    <div class="item">
-      <div class="text-content">
-        <h3 class="title">Musicalização</h3>
-        <p class="description">
-          O aprendizado musical no contexto escolar é fundamental para o
-          desenvolvimento humano. A música permite ao indivíduo uma evolução em
-          áreas importantes do desenvolvimento humano tal como emoção,
-          disciplina, concentração, ordem etc. É reconhecido que a música
-          carrega em sua natureza muito mais que os elementos práticos da
-          própria produção musical. O fazer musical é um tipo de ação social com
-          consequências para outros tipos de ações sociais. ‘Música’ é não
-          apenas reflexiva; ela é também generativa tanto como cultura, como
-          capacidade humana. Numa reflexão mais profunda a música através de
-          seus sons toca as potências da alma humana (Razão, Vontade e
-          Sensibilidade) e suscita em nós a harmonia. No que compete às aulas de
-          musicalização de bebês e crianças, as descobertas biológicas e
-          psicológicas principalmente os estudos de Piaget e Wallon apontam para
-          a estrutura cognitiva do indivíduo começar a serem desenvolvidas desde
-          muito cedo, por isso é importante que as crianças ainda que não tenham
-          estrutura física para tocar um instrumento ou mesmo cantar de forma
-          afinada tenham contato com o universo sonoro musical que nessa
-          determinada fase deve ocorrer por meio de jogos e brincadeiras
-          musicais, de modo que os elementos musicais se enraízem nelas e quando
-          chegarem na idade da razão se tornem de fato bons músicos e por
-          consequência bons cidadãos.
-        </p>
-      </div>
-
-      <div>
-        <img src="img/Musicalizacao.jpg" class="img-prd" />
-      </div>
-    </div>
-    <div></div>
-    <img src="img/Musicalizacao.jpg" class="img-prd-mb" />
-
-    <div class="item">
-      <div class="text-content">
-        <h3 class="title">Inglês</h3>
-        <p class="description">
-          O aprendizado de um segundo idioma é fundamental para o crescimento e
-          capacitação de uma criança. Nos primeiros anos de vida,
-          principalmente, o cérebro se desenvolve de forma muito rápida, então
-          quando elas são expostas ao inglês desde pequena, há uma maior
-          flexibilidade e facilidade em aprender. Com uma maior habilidade para
-          se chegar à fluência, o inglês também estimula o raciocínio, as
-          funções cognitivas e sociais. Aqui na Villa Mater, as crianças
-          aprendem através do story time - hora da história, em que se aprende
-          através da leitura, escuta e observação dos fonemas, brincadeiras que
-          permitem agregar vocabulário e proporcionam diversão, listening and
-          singing - escutando e cantando, que consiste em treinarmos a audição
-          da pronúncia e depois cantarmos mostrando o que é cada coisa, além das
-          conversas que fazemos a respeito de diversos assuntos, como as
-          emoções, gostos, medos e preferências.
-        </p>
-        <p class="description">Uma experiência para a vida toda!</p>
-      </div>
-
-      <div>
-        <img src="img/ingles.jpg" class="img-prd" />
-      </div>
-    </div>
-    <div></div>
-    <img src="img/ingles.jpg" class="img-prd-mb" />
-
-    <div class="item">
-      <div class="text-content">
-        <h3 class="title">NUTRIÇÃO</h3>
-        <p class="description">
-          Uma alimentação adequada nos primeiros anos de vida é fundamental para
-          a formação de um adulto saudável. Os pais sonham em ver seu filho com
-          um prato colorido e variado, cheio de verduras, legumes e frutas, mas
-          os hábitos sócio culturais, rotina corrida, a falta de tempo e as
-          vezes de prioridade fazem com que o discurso da alimentação saudável
-          funcione melhor na teoria do que na prática. Na Villa Mater a
-          preocupação com a alimentação saudável tem início no desenvolvimento
-          do cardápio que é elaborado mensalmente com pratos diversificados e
-          coloridos, além de uma variedade de frutas. As refeições são pensadas,
-          planejadas e supervisionadas pela nutricionista que acompanha desde o
-          processo de produção até a oferta da alimentação para os pequenos.
-          Além disso, as crianças realizam semanalmente junto com a
-          nutricionista atividades, brincadeiras e, as mais queridas, aulas de
-          culinária. As atividades são pensadas e desenvolvidas para cada faixa
-          etária e estimulam a alimentação saudável de forma lúdica e divertida.
-          Se alimentar de forma saudável pode e deve ser prazeroso, um momento
-          de aprendizados, convívio e partilha.
-        </p>
-        <p class="description">Uma experiência para a vida toda!</p>
-      </div>
-
-      <div>
-        <img src="img/nutricao.jpg" class="img-prd" />
-      </div>
-    </div>
-    <div></div>
-    <img src="img/nutricao.jpg" class="img-prd-mb" />
-
-    <div class="item">
-      <div class="text-content">
-        <h3 class="title">ATIVIDADES MENTE E CORPO</h3>
-        <p class="description">
-          O aprendizado se dá quando as informações recebidas através de
-          estímulos são passadas da memória de trabalho para a memória de longo
-          prazo. Pesquisas recentes identificaram que atividades que estimulam
-          os sentidos geram mais conexões neurais, as quais tornam o aprendizado
-          mais significativo. Sendo assim na escola Villa Mater as aulas são
-          planejadas sempre visando estimular a mente e o corpo, com
-          experiências práticas e vivências que imitam a realidade, toda semana
-          na sexta-feira temos eventos voltados ao tema da semana para estimular
-          a mente e o corpo, como exposições, feiras, teatros, festas e
-          territórios. Tais atividades proporcionam inúmeros benefícios ao
-          desenvolvimento infantil.
-        </p>
-      </div>
-
-      <div>
-        <img class="img-prd" src="img/atividade.jpg" />
-      </div>
-    </div>
-    <div></div>
-    <img class="img-prd-mb" src="img/atividade.jpg" />
-
-    <div class="item" id="nossaestrutura">
-      <div class="text-content">
-        <h3 class="title">Nossa Estrutura</h3>
-        <p class="description">
-          A nossa estrutura vai além do conforto, por isso contamos com
-          ambientes contemporâneos e inteligentes, completos e adequados para
-          qualquer que seja a necessidade do seu filho, atendendo inclusive
-          todas as diretrizes para PNE. As salas de aula da Villa Mater foram
-          preparadas para proporcionar aconchego, segurança e o desenvolvimento
-          integral das crianças.
-        </p>
-      </div>
-
-      <div>
-        <img src="img/nossaestrutura.jpg" class="img-prd" />
-      </div>
-    </div>
-    <div></div>
-    <img src="img/nossaestrutura.jpg" class="img-prd-mb" />
-
-    <div class="item" id="carisma">
-      <div class="text-content">
-        <h3 class="title">Carisma</h3>
-        <p class="description">
-          A dimensão espiritual é muito valorizada na Escola Villa Mater, como
-          uma das inteligências múltiplas que precisa de estímulos para ser
-          desenvolvida, por meio do exemplo. Entendemos que esta dimensão amplia
-          a fé humana. Assim, quanto maior a consciência da presença divina,
-          mais o Homem vivencia e se relaciona com Deus. Temos como carisma a
-          Sagrada Família que consiste na devoção à família de Jesus de Nazaré
-          composta por Jesus, Maria e José. Nesta devoção toda família é chamada
-          a imitar as virtudes da Sagrada Família. O seu projeto nuclear é fazer
-          a vontade de Deus. A Sagrada Família é a própria escola de todas as
-          virtudes. Nossa referência!
-        </p>
-      </div>
-
-      <div>
-        <img class="img-prd" src="img/carisma.jpg" />
-      </div>
-    </div>
-    <div></div>
-    <img class="img-prd-mb" src="img/carisma.jpg" />
-  </div>
-
-  <div class="callout">
-    <div class="callout-container">
-      <div class="text-content">
-        <h3>Agende uma visita</h3>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <h1>Luiz Cunha</h1>
         <p>
-          A Villa Mater está de braços e corações abertos para acolher sua
-          família!
+          Eu sou
+          <span
+            class="typed"
+            data-typed-items="Desenvolvedor Full Stack"
+          ></span>
         </p>
-
-        <a
-          href="https://api.whatsapp.com/send?phone=556581325317&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20visita%20"
-          target="_blank"
-          class="btn-icon"
-        >
-          <svg
-            width="18"
-            height="18"
-            viewBox="0 0 18 18"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1 9L15.9994 9"
-              stroke="#CC1316"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></path>
-            <path
-              d="M8 0.999999L16.9996 9L8 17"
-              stroke="#CC1316"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></path>
-          </svg>
-        </a>
-      </div>
-      <div class="image-content desktop-only">
-        <img
-          class="lazy desktop-only entered loaded"
-          src="img/agende.jpg"
-          data-src="img/crianca_5.jpg"
-          width="600"
-          height="400"
-          alt=""
-          data-ll-status="loaded"
-        />
-      </div>
-    </div>
-  </div>
-</body>
-
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="footer-col">
-        <h4>Villa Mater</h4>
-        <ul>
-          <li><a href="#metodologia">Metodologia</a></li>
-          <li><a href="#estrutura">Estrutura</a></li>
-          <li><a href="#carisma">Carisma</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Acompanhe nas redes sociais</h4>
         <div class="social-links">
-          <a href="https://www.facebook.com/beiVillaMater/"
-            ><i class="fab fab-padding fa-facebook-f"></i
+          <a href="https://github.com/oluizcunha" class="github"
+            ><i class="bx bxl-github"></i
           ></a>
-
-          <a href="https://www.instagram.com/bei.villamater/"
-            ><i class="fab fab-padding fa-instagram"></i
+          <a
+            href="https://www.linkedin.com/in/luiz-otavio-cunha-95564a16b/"
+            class="linkedin"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a
+            href="https://api.whatsapp.com/send?phone=5565984526656"
+            class="whatsapp"
+            ><i class="bx bxl-whatsapp"></i
           ></a>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Sobre</h2>
+            <p>Futuro Ciêntista da computação.</p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4">
+              <img src="assets/img/luizcunha.png" class="img-fluid" alt="" />
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content">
+              <h3>Devops, Analyst &amp; Developer.</h3>
+              <p class="font-italic">
+                Ola, meu nome é Luiz Otavio Cunha Moraes, sou formado em Ciência
+                da Computação pela Universidade Federal do Estado de Mato
+                Grosso, atualmente desenvolvedor full stack (angular e java).
+                Apaixonado por tecnologia e resoluções de problemas.
+              </p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="icofont-rounded-right"></i>
+                      <strong>Website:</strong> oluizcunha.github.io
+                    </li>
+                    <li>
+                      <i class="icofont-rounded-right"></i>
+                      <strong>Telefone:</strong> 065 984 526 656
+                    </li>
+                    <li>
+                      <i class="icofont-rounded-right"></i>
+                      <strong>Cidade:</strong> Cuiabá MT
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="icofont-rounded-right"></i>
+                      <strong>Idade:</strong> 23
+                    </li>
+                    <li>
+                      <i class="icofont-rounded-right"></i>
+                      <strong>Email:</strong> luizotcunha@gmail.com
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= Resume Section ======= -->
+      <section id="resume" class="resume">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Resumo</h2>
+            <p>
+              Este é um pequeno resumo da minha vida academica/profissional.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <h3 class="resume-title">Resumo</h3>
+              <div class="resume-item pb-0">
+                <h4>Luiz Cunha</h4>
+                <p>
+                  <em
+                    >Apaixonado por tecnologia 💙. Desde pequeno sendo o
+                    sobrinho que formata compoutadores. </em
+                  ><br />
+                  <em
+                    >Ao ingressar na academia, confirmei minha paixão por
+                    computação e gestão de pessoas. Aperfeiçoando cada dia
+                    minhas habilidades e buscando ser um excelente
+                    profissional.</em
+                  >
+                </p>
+                <ul>
+                  <li>Cuiabá - MT</li>
+                  <li>065 984 526 656</li>
+                  <li>luizotcunha@gmail.com</li>
+                </ul>
+              </div>
+
+              <h3 class="resume-title">Educação</h3>
+              <div class="resume-item">
+                <h4>Bacharelado em Ciência da Computação - UFMT</h4>
+                <h5>2017 - 2021</h5>
+              </div>
+              <div class="resume-item">
+                <h4>Colegio Salesiano São Gonçalo</h4>
+                <h5>2010 - 2016</h5>
+              </div>
+
+              <h3 class="resume-title">Certificados</h3>
+
+              <div class="resume-item">
+                <h4>
+                  <a
+                    href="https://drive.google.com/file/d/1RXdpQdjKJpzBoxzow_Ar9tudkfTJG6ly/view?usp=sharing"
+                    >Angular Academy</a
+                  >
+                </h4>
+                <h5>jul. de 2021</h5>
+                <h6>
+                  <a href="https://www.linkedin.com/school/impactaoficial/"
+                    >Impacta TecnologiaImpacta Tecnologia</a
+                  >
+                </h6>
+              </div>
+
+              <div class="resume-item">
+                <h4>
+                  <a
+                    href="https://drive.google.com/file/d/1Vshxm5Bd8LLtLIvr8GZ3XTqbMLV3XAMX/view"
+                    >Semana OmniStack 11
+                  </a>
+                </h4>
+                <p>(Node.js, ReactJS e React Native)</p>
+                <h5>jul. de 2021</h5>
+                <h6>
+                  <a href="https://www.linkedin.com/school/rocketseat/"
+                    >Rocketseat</a
+                  >
+                </h6>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="resume-title">Experiencia profissional</h3>
+              <div class="resume-item">
+                <h4>
+                  <a href="https://www.sisconsultoria.com.br/"
+                    >Sis Consultoria</a
+                  >
+                </h4>
+                <h5>mar. de 2022 - Atualmente</h5>
+                <p><em>Developer Full Stack (Java / Angular)</em></p>
+                <p>
+                  Atuando como desenvolvedor full stack, trabalhando em
+                  desenvolvimento e manutenção de softwares. Utilizando software
+                  e metodologias ágeis para um melhor desempenho (Scrum, Jira).
+                </p>
+              </div>
+              <div class="resume-item">
+                <h4><a href="https://www.capgemini.com/">Capgemini</a></h4>
+                <h5>jun. de 2021 - mar. de 2022</h5>
+                <p><em>Developer Full Stack (Java / Angular / PLSQL)</em></p>
+                <p>
+                  Atuando como desenvolvedor full stack, trabalhando em
+                  desenvolvimento e manutenção de softwares. Utilizando software
+                  e metodologias ágeis para um melhor desempenho (Scrum, Jira).
+                </p>
+              </div>
+              <div class="resume-item">
+                <h4><a href="https://giganti.com.br/">Giganti</a></h4>
+                <h5>fev. de 2021 - jun. de 2021</h5>
+                <p><em>Desenvolvedor Pleno C# / Node</em></p>
+                <p>
+                  Desenvolvedor Pleno, atuando no desenvolvimento e manutenção
+                  de sites e aplicativos.
+                </p>
+              </div>
+              <div class="resume-item">
+                <h4>
+                  <a href="http://www.politec.mt.gov.br/"
+                    >Fábrica de Software da POLITEC</a
+                  >
+                </h4>
+                <h5>mar. de 2020 - fev. de 2021</h5>
+                <p><em>Gerente / Full Stack Developer</em></p>
+                <p>
+                  Atuando como gerente/gestor da Fábrica de Software da POLITEC.
+                  Conduzindo todo o projeto de desenvolvimento de um sistema
+                  para internet, voltado para as tecnologias de ponta (React,
+                  Node.js, SQL, Docker e Java). Controlando toda a qualidade e
+                  requisitos do desenvolvimento, gerindo e administrando toda a
+                  equipe de desenvolvedores e analistas. Atuando como a ponte
+                  entre o "Cliente da aplicação" e o projeto.
+                </p>
+              </div>
+              <div class="resume-item">
+                <h4>
+                  <a href="http://www.politec.mt.gov.br/"
+                    >Fábrica de Software da POLITEC</a
+                  >
+                </h4>
+                <h5>jun. de 2019 - mar. de 2020</h5>
+                <p><em>Full Stack Developer</em></p>
+                <ul>
+                  <li>Analista</li>
+                  <li>Desenvolvedor</li>
+                  <li>Tester</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4><a href="https://unicus.net.br/">ConecSoft / Unicus</a></h4>
+                <h5>jul. de 2017 - jun. de 2019</h5>
+                <p><em>Tester</em></p>
+                <p>
+                  <em
+                    >Estagiário dentro do setor de desenvolvimento, com a função
+                    de analista de qualidade. Realizando testes em uma aplicação
+                    desenvolvida em C# com banco SQL.</em
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Resume Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <h3>Luiz Cunha</h3>
+        <p>Apaixonado por computação.</p>
+        <div class="social-links">
+          <a href="https://github.com/oluizcunha" class="github"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/luiz-otavio-cunha-95564a16b/"
+            class="linkedin"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a
+            href="https://api.whatsapp.com/send?phone=5565984526656"
+            class="whatsapp"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+        </div>
+        <div class="copyright">
+          &copy; Copyright <strong><span>MyResume</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: [license-url] -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> and
+          <a href="http://oluizcunha.github.io/">oluizcunha</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      function count() {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://api.countapi.xyz/hit/oluizcunha");
+        xhr.responseType = "json";
+        xhr.onload = function () {
+          console.log(
+            `Essa pagina ja foi vista: ${this.response.value} vezes!`
+          );
+        };
+        xhr.send();
+      }
+    </script>
+  </body>
+</html>
